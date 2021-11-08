@@ -245,6 +245,8 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<true/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -1019,6 +1021,8 @@
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
 			<integer>1</integer>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 		</dict>
 		<key>Audio</key>
 		<dict>
@@ -1045,8 +1049,26 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>OpenHfsPlus.efi</string>
-			<string>OpenRuntime.efi</string>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>HFS+ Driver</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenHfsPlus.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1159,6 +1181,10 @@
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
 			<false/>
+			<key>ForceOcWriteFlash</key>
+			<false/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
